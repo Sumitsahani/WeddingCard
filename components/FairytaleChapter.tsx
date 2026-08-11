@@ -1,0 +1,6 @@
+"use client";
+
+import Image from "next/image";
+import {useState} from "react";
+
+export default function FairytaleChapter(){const [wishes,setWishes]=useState<number[]>([]);return <section className="fairytale scene"><Image src="/images/fairytale-palace.png" alt="An enchanted Indian palace illuminated for the wedding" fill sizes="100vw" priority/><div className="fairytale-shade"/><div className="fairytale-copy"><span className="eyebrow">Beyond these doors</span><h2>A celebration<br/><em>from a storybook.</em></h2><p>Where every diya carries a blessing, every flower holds a smile, and every guest becomes part of our happily ever after.</p><div className="fairytale-blessing"><span>बालकों की हँसी</span><i>·</i><span>बड़ों का आशीर्वाद</span><i>·</i><span>अपनों का प्यार</span></div></div><div className="wish-lanterns"><small>Tap the lanterns and make a wish</small><div>{[1,2,3,4,5].map(n=><button key={n} className={wishes.includes(n)?"lit":""} onClick={()=>setWishes(v=>v.includes(n)?v:[...v,n])} aria-label={`Light wish lantern ${n}`}><i/><span>{n}</span></button>)}</div>{wishes.length===5&&<b>May every wish find its way to the stars ✦</b>}</div><div className="fireflies" aria-hidden>{Array.from({length:20},(_,i)=><i key={i} style={{"--i":i} as React.CSSProperties}/>)}</div></section>}

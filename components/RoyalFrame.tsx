@@ -1,0 +1,1 @@
+export default function RoyalFrame(){return <><div className="royal-crest" aria-hidden><span>A</span><i>♛</i><span>S</span><small>The Royal Wedding</small></div><div className="royal-corners" aria-hidden><i/><i/><i/><i/></div></>}

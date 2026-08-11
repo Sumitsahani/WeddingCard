@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720">
+  <g transform="translate(360 360)" fill="none" stroke="#c29a57" opacity=".16">
+    <circle r="250"/><circle r="205"/><circle r="115"/><circle r="45"/>
+    <g stroke-width="2">
+      <path id="p" d="M0-250C-48-198-48-148 0-115 48-148 48-198 0-250Z"/>
+      <use href="#p" transform="rotate(30)"/><use href="#p" transform="rotate(60)"/><use href="#p" transform="rotate(90)"/><use href="#p" transform="rotate(120)"/><use href="#p" transform="rotate(150)"/><use href="#p" transform="rotate(180)"/><use href="#p" transform="rotate(210)"/><use href="#p" transform="rotate(240)"/><use href="#p" transform="rotate(270)"/><use href="#p" transform="rotate(300)"/><use href="#p" transform="rotate(330)"/>
+    </g>
+    <path d="M0-75C-45-40-45 10 0 45 45 10 45-40 0-75Zm-75 75c35-45 85-45 120 0-35 45-85 45-120 0ZM0 75c45-35 45-85 0-120-45 35-45 85 0 120ZM75 0C40 45-10 45-45 0-10-45 40-45 75 0Z"/>
+  </g>
+</svg>
